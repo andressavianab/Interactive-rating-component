@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./javascript/script.js"></script>
+  <title>Interactive rating component</title>
+</head>
+<body>
+  <main>
+    <section class="star">
+      <img src="./images/icon-star.svg" alt="">
+    </section>
+    <section class="texts">
+      <h1>How did we do?</h1>
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+    </section>
+    <section class="feedback">
+      <button class="feedback-btn" onclick="feedBack(1)">1</button><button class="feedback-btn" onclick="feedBack(2)">2</button><button class="feedback-btn" onclick="feedBack(3)">3</button><button class="feedback-btn" onclick="feedBack(4)">4</button><button class="feedback-btn" onclick="feedBack(5)">5</button></section>
+    <section class="submit"><button id="submit" class="submit-btn">SUBMIT</button></section>
+  </main>
+  <div id="thank-you-card" class="thank-you-card">
+    <section class="image-ty-card">
+      <img class="image-ty-card-img" width="135px" height="90px" src="./images/illustration-thank-you.svg" alt="" aria-hidden="true">
+    </section>
+    <section class="selected-text">
+      <p id="feedback-text">
+      </p>
+    </section>
+    <section class="ty-texts">
+      <h1>Thank you!</h1>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
+    </section>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/andressavianab">Andressa Viana</a>.
+  </div>
+</body>
+</html>
