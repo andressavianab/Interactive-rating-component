@@ -34,7 +34,7 @@ Users should be able to:
 
 ### What I learned
 
--To save user feedback to localStorage and change color of selected button.
+- To save user feedback to localStorage and change color of selected button.
 
 ```css
 .feedback-btn:focus {
