@@ -1,4 +1,4 @@
-# Frontend Mentor - Interactive rating component solution
+# 🧮 [Interactive rating component solution](https://andressavianab.github.io/Interactive-rating-component/)
 
 This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -34,7 +34,7 @@ Users should be able to:
 
 ### What I learned
 
-How to change html text based on button click and  change color of selected button.
+-To save user feedback to localStorage and change color of selected button.
 
 ```css
 .feedback-btn:focus {
@@ -43,21 +43,22 @@ How to change html text based on button click and  change color of selected butt
 }
 ```
 ```js
-function feedBack(valor) {
-    if (valor === 1) {
-        feedBackText.innerHTML = 'You selected ' + '1' + ' out of 5'
-    } else if (valor === 2) {
-        feedBackText.innerHTML = 'You selected ' + '2' + ' out of 5'
-    } else if (valor === 3) {
-        feedBackText.innerHTML = 'You selected ' + '3' + ' out of 5'
-    } else if (valor === 4) {
-        feedBackText.innerHTML = 'You selected ' + '4' + ' out of 5'
-    } else if (valor === 5) {
-        feedBackText.innerHTML = 'You selected ' + '5' + ' out of 5'
-    } else {
-        return
+
+function saveFeedback(btn) {
+    const rate = {
+        'rate': btn
     }
+    localStorage.setItem('feedBack', JSON.stringify(rate))
+    functionCalled = true
 }
+
+function tyCardVisible() {
+    let getfeedBacklS = localStorage.getItem('feedBack')
+    let feedBack = JSON.parse(getfeedBacklS)
+    tyCard.style.visibility = 'visible'
+    feedBackText.innerHTML = 'You selected ' + feedBack.rate + ' out of 5'
+}
+
 ```
 
 ### Useful resources
