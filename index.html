@@ -21,14 +21,14 @@
       </p>
     </section>
     <section class="feedback">
-      <button class="feedback-btn" onclick="feedBack(1)">1</button><button class="feedback-btn" onclick="feedBack(2)">2</button><button class="feedback-btn" onclick="feedBack(3)">3</button><button class="feedback-btn" onclick="feedBack(4)">4</button><button class="feedback-btn" onclick="feedBack(5)">5</button></section>
+      <button class="feedback-btn" onclick="saveFeedback('1')">1</button><button class="feedback-btn" onclick="saveFeedback('2')">2</button><button class="feedback-btn" onclick="saveFeedback('3')">3</button><button class="feedback-btn" onclick="saveFeedback('4')">4</button><button class="feedback-btn" onclick="saveFeedback('5')">5</button></section>
     <section class="submit"><button id="submit" class="submit-btn">SUBMIT</button></section>
   </main>
   <div id="thank-you-card" class="thank-you-card">
     <section class="image-ty-card">
       <img class="image-ty-card-img" width="135px" height="90px" src="./images/illustration-thank-you.svg" alt="" aria-hidden="true">
     </section>
-    <section class="selected-text">
+    <section class="selected-text" id="selected-text">
       <p id="feedback-text">
       </p>
     </section>
